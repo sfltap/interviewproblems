@@ -1,4 +1,5 @@
-Launch the application by running the following command in the command prompt/terminal
+1. Download the code. You can do this from git or just click the download button on the page.
+2. Launch the application by running the following command in the command prompt/terminal
 
 mvnw spring-boot:run
 
