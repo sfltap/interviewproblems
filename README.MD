@@ -9,6 +9,6 @@ if you're running on a linux system then you might have to run this
 
 After that, open a browser and open up http://localhost:8080
 
-3. You should see a greeting page with a list of tasks. please complete the tasks.
+3. You should see a greeting page with a list of tasks. please complete the tasks. Feel free to use your favorite IDE to complete the tasks
 
 If you don't want to write the code then you should at least be able to speak about how someone would answer the questions.
