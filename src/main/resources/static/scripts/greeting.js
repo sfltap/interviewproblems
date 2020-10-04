@@ -1,6 +1,5 @@
 window.onload = function () {
-// do the work after everything was loaded (DOM, media elements)
-    console.log("HElppp");
+    // do the work after everything was loaded (DOM, media elements)
     setBackgroundToRed();
 
 }
