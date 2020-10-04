@@ -27,9 +27,9 @@
         <li>These feedback form should accept the following values and allow the user to submit the form</li>
         <li>Values</li>
             <ul>
-                <li>What they were satisfied with</li>
-                <li>What they were not satisfied with</li>
-                <li>How can we do better?</li>
+                <li>textbox: What they were satisfied with</li>
+                <li>textbox: What they were not satisfied with</li>
+                <li>textbox:How can we do better?</li>
             </ul>
         <li>After the user submits the form, display the data they submitted in a non-editable format to them</li>
         <li>Let them know that we will read their feedback!</li>
@@ -38,6 +38,7 @@
             <li>This is very similar to the Greeting controller (HTML file, Controller Java file, Greeting Java file)</li>
             <li>There is NO SHAME in copying files and changing them slightly</li>
             <li>This pattern is called MVC. Would you be able to talk about it after completing this task?</li>
+            <li>Don't over think this. Just get the 3 values and post it to the page.</li>
         </ul>
     </ul>
     <h1>TASK 3</h1>
@@ -54,7 +55,7 @@
     </ul>
     <h1>TASK 4</h1>
     <ul>
-        <li>Please go to the <a href="/unitedStatesInventory">United States Invetory page</a> see what that looks like</li>
+        <li>Please go to the <a href="/unitedStatesInventory">United States Inventory page</a> see what that looks like</li>
         <li>The item description code only displays for 5 items and not for all 10. What is going on? Please help!</li>
     </ul>
     <h1>TASK 5</h1>
@@ -64,7 +65,7 @@
         <li>The CustomerController.java was created but not completed</li>
         <li>The CustomerDAOImpl was created but not completed. Please return the list that is created in CustomerDAOImpl</li>
         <li>This functionality is VERY similar to the UnitedStatesInventory page. Please copy that functionality</li>
-        <li>Please go to the <a href="/unitedStatesInventory">United States Invetory page</a> see what that looks like</li>
+        <li>Please go to the <a href="/unitedStatesInventory">United States Inventory page</a> see what that looks like</li>
         <li>Please use the Inventory Controller, UnitedStatesInventoryDAO & DAO Impl, and InventoryService as templates</li>
 
         <li><u><b>Hints</b></u></li>
@@ -76,11 +77,15 @@
     <h1>TASK 6 (OPTIONAL)</h1>
     <ul>
         <li>Our European inventory page is broken!!! Please help!!</li>
-        <li>This should work exactly like </li>
+        <li>This should work exactly like the US Inventory page. We have the outline created already but it's still broken.</li>
+        <li>Finish out the code and try to get it to work</li>
         <li><u><b>Hints</b></u></li>
         <ul>
-            <li>Look up how to change background colors in CSS in google</li>
-            <li>You can either create a separate CSS file or do inline styling. Google what these mean.</li>
+            <li>This will break if you try to copy the others. This requires changing the other code</li>
+            <li>What is the error message that pops up when you uncomment everything? Does google help you?</li>
+            <li>This involves more knowledge about Spring and their singletons.</li>
+            <li>Can you specify what you want to autowire with the Qualifier annotation?</li>
+            <li>You will have to change the other @Service and @Repository annotations in some way.</li>
         </ul>
     </ul>
     <h1>TASK 7 (OPTIONAL)</h1>
@@ -90,7 +95,7 @@
         <li>Text should not include the words 'refund' in it</li>
         <li><u><b>Hints</b></u></li>
         <ul>
-            <li>What is REGEX?</li>
+            <li>What is REGEX? Can that be helpful?</li>
             <li>Spring comes with its own validator infrastructure. If you google Spring validation then you should find it</li>
         </ul>
     </ul>
