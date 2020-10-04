@@ -22,7 +22,7 @@ public class InventoryController {
         model.addAttribute("inventory", usInventory);
         return "usInventory";
     }
-    @GetMapping("/getEuropeanInventory")
+    @GetMapping("/europeanInventory")
     public String euroInventoryList(Model model) {
         List<Inventory> euroInventory = inventoryService.getEuroInventory();
         model.addAttribute("inventory", euroInventory);
