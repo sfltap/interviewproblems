@@ -7,3 +7,7 @@ window.onload = function () {
 function setBackgroundToRed() {
     document.getElementById("greetingBox").style.background = "red";
 }
+function postMessage() {
+    alert();
+    return false;
+}
