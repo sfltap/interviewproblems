@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Inventory</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>European Inventory</h1>
+<body>
+
+<span th:each="inventoryItem : ${inventory}">
+    <span th:text="'ID:' + ${inventoryItem.id} + ' - - - ' + 'Description:' + ${inventoryItem.itemDesc} + ' - - - ' + 'Item Category Code:' + ${inventoryItem.itemCategoryCode}"></span>
+    <br/>
+</span>
+</body>
+<br/>
+<a href="/">Back to home</a>
+
+</body>
+</html>

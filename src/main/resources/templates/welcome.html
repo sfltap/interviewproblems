@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head> 
+    <title>Getting Startedn</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Welcome!</h1>
+    <span>We need some help! Please help us with the following tasks!</span>
+
+    <br/><hr/>
+
+
+    <h1>TASK 1</h1>
+    <ul>
+        <li>Please go to the <a href="/greeting">greetings page</a> and submit a form</li>
+        <li>Our clients say that the red doesn't look good! Please change the color red to blue.</li>
+        <li><u><b>Hints</b></u></li>
+        <ul>
+            <li>This color change happens in a javascript file</li>
+        </ul>
+
+    </ul>
+    <h1>TASK 2</h1>
+    <ul>
+        <li>We need another form like the greeting form. This form will be called the Feedback form</li>
+        <li>These feedback form should accept the following values and allow the user to submit the form</li>
+        <li>Values</li>
+            <ul>
+                <li>What they were satisfied with</li>
+                <li>What they were not satisfied with</li>
+                <li>How can we do better?</li>
+            </ul>
+        <li>After the user submits the form, display the data they submitted in a non-editable format to them</li>
+        <li>Let them know that we will read their feedback!</li>
+        <li><u><b>Hints</b></u></li>
+        <ul>
+            <li>This is very similar to the Greeting controller (HTML file, Controller Java file, Greeting Java file)</li>
+            <li>There is NO SHAME in copying files and changing them slightly</li>
+            <li>This pattern is called MVC. Would you be able to talk about it after completing this task?</li>
+        </ul>
+    </ul>
+    <h1>TASK 3</h1>
+    <ul>
+        <li>Please go to the <a href="/greeting">greetings page</a> and submit a form</li>
+        <li>We have learned that our customers want the ID to have a yellow background</li>
+        <li>We don't need to do this in javascript. Can you accomplish this in CSS?</li>
+        <li><u><b>Hints</b></u></li>
+        <ul>
+            <li>Look up how to change background colors in CSS in google</li>
+            <li>You can either create a separate CSS file or do inline styling. Google what these mean.</li>
+        </ul>
+
+    </ul>
+    <h1>TASK 4</h1>
+    <ul>
+        <li>Please go to the <a href="/unitedStatesInventory">United States Invetory page</a> see what that looks like</li>
+        <li>The item description code only displays for 5 items and not for all 10. What is going on? Please help!</li>
+    </ul>
+    <h1>TASK 5</h1>
+    <ul>
+        <li>We need to have a customer list! The work has been partially done. Please finish it!</li>
+        <li>The customerList.html was created but not filled out! Please finish it to show all customer information</li>
+        <li>The CustomerController.java was created but not completed</li>
+        <li>The CustomerDAOImpl was created but not completed. Please return the list that is created in CustomerDAOImpl</li>
+        <li>This functionality is VERY similar to the UnitedStatesInventory page. Please copy that functionality</li>
+        <li>Please go to the <a href="/unitedStatesInventory">United States Invetory page</a> see what that looks like</li>
+        <li>Please use the Inventory Controller, UnitedStatesInventoryDAO & DAO Impl, and InventoryService as templates</li>
+
+        <li><u><b>Hints</b></u></li>
+        <ul>
+            <li>What is an annotation? What does @Autowired seem to do? How does Spring seem to manage singletons?</li>
+            <li>What does the pattern seem to be? It looks like controller -> service -> DAO. What are these things? Can you explain?</li>
+        </ul>
+    </ul>
+    <h1>TASK 6 (OPTIONAL)</h1>
+    <ul>
+        <li>Our European inventory page is broken!!! Please help!!</li>
+        <li>This should work exactly like </li>
+        <li><u><b>Hints</b></u></li>
+        <ul>
+            <li>Look up how to change background colors in CSS in google</li>
+            <li>You can either create a separate CSS file or do inline styling. Google what these mean.</li>
+        </ul>
+    </ul>
+    <h1>TASK 7 (OPTIONAL)</h1>
+    <ul>
+        <li>People are submitting feedback forms that are too long!! Can you please add validation to the feedback form?</li>
+        <li>Text should be no longer than 250 characters</li>
+        <li>Text should not include the words 'refund' in it</li>
+        <li><u><b>Hints</b></u></li>
+        <ul>
+            <li>What is REGEX?</li>
+            <li>Spring comes with its own validator infrastructure. If you google Spring validation then you should find it</li>
+        </ul>
+    </ul>
+</body>
+</html>
