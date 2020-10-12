@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+
+<head> 
+    <title>Feedback Result</title>
+  
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Result</h1>
+    <p  th:text="'Satisfied: ' + ${feedback.satisfied}"  />
+    <p  id="greetingBox" th:text="'Unsatisfied: ' + ${feedback.notSatisfied}" />
+    <p  th:text="'Improvements: ' + ${feedback.improvements}"  />
+    <br/>
+    <script>
+    function postMessage() {
+        alert('Thank you for submitting a feedback form, our team will review your feedback to help us improve.');
+        return false;
+    }
+    </script>
+    <button onclick="postMessage()">Alert Message</button>
+    <br/>
+    <a href="/feedback">Submit another message</a>
+    <br/>
+    <a href="/">Back to home</a>
+</body>
+</html>
