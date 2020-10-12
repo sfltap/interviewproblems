@@ -1,10 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
 
+<head>
+    <title>Customer List</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+    <h1>Customer List</h1>
+
+    <body>
+        <span th:each="customerList : ${customer}">
+            <span th:text="'ID: ' + ${customerList.id} + '---' + 
+         'First Name: ' + ${customerList.firstName} + '---' + 
+         'Last Name: ' + ${customerList.lastName}">
+            </span>
+            <br />
+        </span>
+    </body>
+    <br />
+    <a href="/">Back to home</a>
 </body>
+
 </html>
