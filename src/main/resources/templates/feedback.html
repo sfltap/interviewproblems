@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head> 
+    <title>Feedback page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Form</h1>
+    <form action="#" th:action="@{/feedback}" th:object="${feedback}" method="post">
+    	<p >'What were you satisfied with?': <input type="text" th:field="*{satisfied}" /></p>
+        <p>'What were you not satisfied with?': <input type="text" th:field="*{notSatisfied}" /></p>
+        <p>'How can we do better?': <input type="text" th:field="*{improvements}" /></p>
+        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    </form>
+    <br/>
+    <a href="/">Back to home</a>
+</body>
+</html>
