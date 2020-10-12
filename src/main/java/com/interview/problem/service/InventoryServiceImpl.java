@@ -29,19 +29,25 @@ public class InventoryServiceImpl implements InventoryService {
         // return euroInventoryDAO.getInventory();
     }
 
-    @Override
-    public void addItemCategoryCodeDesc(List<Inventory> inventoryList) {
-        for(int i = 0; i < 5; i++) {
-            switch (inventoryList.get(i).getItemCategoryCode()) {
-                case "A" :
-                    inventoryList.get(i).setItemCategoryCodeDesc("Consumable");
-                    break;
-                case "B" :
-                    inventoryList.get(i).setItemCategoryCodeDesc("Non-Consumable");
-                    break;
-                default:
-                    break;
-            }
-        }
-    }
+   	@Override
+	public void addItemCategoryCodeDesc(List<Inventory> inventoryList) {
+		int maxInventory = inventoryList.size();
+		for (int i = 0; i < maxInventory; i++) {
+			if (inventoryList.get(i).getItemCategoryCode() == null) {
+				inventoryList.get(i).setItemCategoryCodeDesc("Unknown");
+				continue;
+			} else {
+				switch (inventoryList.get(i).getItemCategoryCode()) {
+				case "A":
+					inventoryList.get(i).setItemCategoryCodeDesc("Consumable");
+					break;
+				case "B":
+					inventoryList.get(i).setItemCategoryCodeDesc("Non-Consumable");
+					break;
+				default:
+					break;
+				}
+			}
+		}
+	}
 }
