@@ -1,16 +1,22 @@
 package com.interview.problem.dao;
 
-import com.interview.problem.model.Customer;
-import com.interview.problem.model.Inventory;
-
-import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.annotation.PostConstruct;
+
+import org.springframework.stereotype.Repository;
+
+import com.interview.problem.model.Customer;
+
+@Repository
 public class CustomerDAOImpl implements CustomerDAO {
     private List<Customer> customerList;
 
-
+	@Override
+	public List<Customer> getCustomerList() {
+		return customerList;
+	}
 
     @PostConstruct
     public void setUpInventory() {
