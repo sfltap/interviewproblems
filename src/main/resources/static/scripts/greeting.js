@@ -7,6 +7,7 @@ function setBackgroundToRed() {
     document.getElementById("greetingBox").style.background = "red";
 }
 function postMessage() {
-    alert();
+    var idValue = document.getElementById("greetingBox").textContent;
+    alert(idValue);
     return false;
 }
