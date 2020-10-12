@@ -2,13 +2,14 @@ package com.interview.problem.dao;
 
 import com.interview.problem.model.Inventory;
 import org.springframework.stereotype.Repository;
+import org.springframework.context.annotation.Primary;
 
 import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-@Repository
+@Primary @Repository("usInventoryDAO") 
 public class UnitedStatesInventoryDAOImpl implements InventoryDAO{
 	private ArrayList<Inventory> unitedStatesInventoryList;
 
