@@ -7,7 +7,7 @@ import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.List;
 
-// @Repository
+@Repository("euroInventoryDAO")
 public class EuroInventoryDAOImpl implements InventoryDAO {
 	private ArrayList<Inventory> euroInventoryList;
 
