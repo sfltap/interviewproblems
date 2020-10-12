@@ -12,11 +12,12 @@ import java.util.List;
 public class InventoryServiceImpl implements InventoryService {
 
     @Autowired
+    @Qualifier(value = "usInventoryDAO")
     private InventoryDAO unitedStatesInventoryDAO;
 
-//    @Autowired
-//    @Qualifier
-//    private InventoryDAO euroInventoryDAO;
+	@Autowired
+	@Qualifier(value = "euroInventoryDAO")
+	private InventoryDAO euroInventoryDAO;
 
     @Override
     public List<Inventory> getUSInventory() {
